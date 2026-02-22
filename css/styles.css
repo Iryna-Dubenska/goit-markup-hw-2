@@ -1,7 +1,5 @@
 
-font-family: "Roboto",
-sans-serif;
-font-family: "Raleway",
+
 
 body {
 font-family: "Roboto" , sans-serif;
@@ -9,9 +7,16 @@ color: #434455;
 background-COLOR: #ffffff;
 }
 
+/* #region reset styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* #endregion */
 ul,
 ol {
-    list-style-type: none;
+    list-style: none;
 }
 
 a {
@@ -86,7 +91,7 @@ button:focus {
  
 
 
-.hero{
+.hero {
     background: #2e2f42;
     padding: 120px 0;
     text-align: center;
@@ -103,42 +108,43 @@ button:focus {
     color: #ffffff;
 }
 
-.hero-bth {
+.hero-btn {
+    /* styles */
     min-width: 169px;
     height: 56px;
     background-color: #4d5ae5;
     border: none;
     border-radius: 4px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
     font-weight: 500;
-    cursor: pointer 0.3s;
-    transition: background-color 250ms ease;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.hero-btn:hover ,
-.hero-bth:focus {
+.hero-btn:hover,
+.hero-btn:focus {
     background-color: #404bbf;
 }
 
 .portfolio {
-    padding: 120px;
-    text-align: center;
-}
+    padding-top: 120px;
+    padding-bottom: 120px;
+    }
 
 .portfolio h2 {
     margin-bottom: 72px;
     font-size: 36px;
 }
 
-.portfolio__list {
+.portfolio-list {
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
 }
 
-.portfolio__card h3 {
+.portfolio-card h3 {
     margin-top: 16px;
     font-size: 20px;
 }
